@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello, WebVR! • A-Frame</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!--音のプログラム -->
+      <!-- （１）aframe（グリッチ）のアセットを使用したバージョン -->
+      <!-- <a-sound src="https://cdn.glitch.com/99813fe2-a61a-4209-b6b8-7bd25c14cbaa%2Fbag.mp3?v=1600130931062" 
+               autoplay="true" 
+               position="0 2 5"></a-sound> -->
+      <!-- （２）普通バージョン (パスの指定方法が独特)-->
+      <a-sound
+        src="src: url(bag.mp3)"
+        autoplay="true"
+        position="0 2 5"
+      ></a-sound>
+      <a-sphere
+        position="0 1.25 -5"
+        radius="1.25"
+        color="#EF2D5E"
+        shadow
+      ></a-sphere>
+    </a-scene>
+  </body>
+</html>
+
